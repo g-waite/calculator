@@ -22,7 +22,7 @@ opBtn.forEach((item) =>
   })
 );
 
-//Removes any displayed values
+//Removes any displayed values.
 let resetDisplay = () => {
   display.value = "";
 };
