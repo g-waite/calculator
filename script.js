@@ -2,10 +2,23 @@ const numBtn = document.querySelectorAll(".num");
 const opBtn = document.querySelectorAll(".operator");
 const display = document.querySelector(".calculator-screen");
 
+let firstOperand = "";
+let secondOperand = "";
+let shouldResetScreen = "";
+let currentOperation = null;
+//let shouldResetDisplay = false;
+
 //Removes zero and appends numeric user input on display
 let handleAppendNumber = (item) => {
   if (display.value === "0") resetDisplay();
   if (display.value.length < 9) display.value += item.value;
+};
+
+let handleOperator = (item) => {
+  currentOperation = item.value;
+  //firstOperand = display.innerText;
+  //updateOperatorBtnStyle(currentOperation);
+  //shouldResetDisplay = true;
 };
 
 //when a numeric button is pressed, return button info
