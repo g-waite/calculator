@@ -1,6 +1,6 @@
-Basic Calculator Application
+# Basic Calculator Application
 
-Requirements:
+## Requirements:
 
 Display that updates
 

@@ -16,9 +16,9 @@ let handleAppendNumber = (item) => {
 
 let handleOperator = (item) => {
   currentOperation = item.value;
-  //firstOperand = display.innerText;
+  firstOperand = display.value;
   //updateOperatorBtnStyle(currentOperation);
-  //shouldResetDisplay = true;
+  resetDisplay();
 };
 
 //when a numeric button is pressed, return button info
